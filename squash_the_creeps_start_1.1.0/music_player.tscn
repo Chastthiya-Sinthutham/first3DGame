@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bl3sgaggqgf12"]
+
+[ext_resource type="AudioStream" uid="uid://c4xm2invgrdra" path="res://art/busy-street-66943.mp3" id="1_fvyft"]
+
+[node name="MusicPlayer" type="AudioStreamPlayer3D"]
+stream = ExtResource("1_fvyft")
+autoplay = true

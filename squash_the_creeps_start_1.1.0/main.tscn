@@ -1,0 +1,153 @@
+[gd_scene load_steps=16 format=3 uid="uid://c8tt36vyb8ck3"]
+
+[ext_resource type="Script" uid="uid://b7b5i423x408x" path="res://main.gd" id="1_h2yge"]
+[ext_resource type="PackedScene" uid="uid://xww6y2frqtd4" path="res://player.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://bi2pe1e77iceh" path="res://mob.tscn" id="2_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://c3feloo83gxlc" path="res://art/newscms_thaihealth_c_abeqruvwy367.jpg" id="3_7mycd"]
+[ext_resource type="FontFile" uid="uid://1kdfdwbc2jcd" path="res://fonts/Montserrat-Medium.ttf" id="4_lquwl"]
+[ext_resource type="Script" uid="uid://cfjb33otl2gal" path="res://score_label.gd" id="5_7mycd"]
+[ext_resource type="FontFile" uid="uid://bvkxc6dgnh4jo" path="res://THSarabunNew/THSarabunNew BoldItalic.ttf" id="7_272bh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7dm0k"]
+size = Vector3(60, 2, 60)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ig7tw"]
+size = Vector3(60, 2, 60)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ig7tw"]
+albedo_texture = ExtResource("3_7mycd")
+uv1_scale = Vector3(3.38, 3.38, 3.38)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lquwl"]
+albedo_color = Color(0.941176, 1, 0, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_ig7tw"]
+material = SubResource("StandardMaterial3D_lquwl")
+
+[sub_resource type="Curve3D" id="Curve3D_7mycd"]
+closed = true
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -18.139, 2, -12.531, 0, 0, 0, 0, 0, 0, 18.775, 2, -12.243, 0, 0, 0, 0, 0, 0, 18.827, 2, 15.222, 0, 0, 0, 0, 0, 0, -19.089, 2, 15.502),
+"tilts": PackedFloat32Array(0, 0, 0, 0)
+}
+point_count = 4
+
+[sub_resource type="Theme" id="Theme_272bh"]
+default_font = ExtResource("4_lquwl")
+default_font_size = 22
+
+[sub_resource type="LabelSettings" id="LabelSettings_5vw27"]
+font = ExtResource("7_272bh")
+font_size = 29
+
+[node name="main" type="Node"]
+script = ExtResource("1_h2yge")
+mob_scene = ExtResource("2_1bvp3")
+
+[node name="Ground" type="StaticBody3D" parent="."]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground"]
+shape = SubResource("BoxShape3D_7dm0k")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Ground"]
+mesh = SubResource("BoxMesh_ig7tw")
+surface_material_override/0 = SubResource("StandardMaterial3D_ig7tw")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Ground"]
+shape = SubResource("BoxShape3D_7dm0k")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Player" parent="." instance=ExtResource("1_ig7tw")]
+transform = Transform3D(0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.9, 0, 3.275, 0)
+
+[node name="CameraPivot" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="CameraPivot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 19)
+projection = 1
+size = 19.0
+far = 164.01
+
+[node name="Cylinderes" type="Node3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Cylinderes"]
+transform = Transform3D(2.69, 0, 0, 0, 2.69, 0, 0, 0, 2.69, -16.7579, 0, -11.5473)
+mesh = SubResource("CylinderMesh_ig7tw")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Cylinderes"]
+transform = Transform3D(2.69, 0, 0, 0, 2.69, 0, 0, 0, 2.69, 17.1096, 0, 13.8109)
+mesh = SubResource("CylinderMesh_ig7tw")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Cylinderes"]
+transform = Transform3D(2.69, 0, 0, 0, 2.69, 0, 0, 0, 2.69, -17.5936, 0, 13.9193)
+mesh = SubResource("CylinderMesh_ig7tw")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Cylinderes"]
+transform = Transform3D(2.69, 0, 0, 0, 2.69, 0, 0, 0, 2.69, 16.9844, 0, -11.4056)
+mesh = SubResource("CylinderMesh_ig7tw")
+
+[node name="SpawnPath" type="Path3D" parent="."]
+curve = SubResource("Curve3D_7mycd")
+
+[node name="SpawnLocation" type="PathFollow3D" parent="SpawnPath"]
+transform = Transform3D(-0.00780159, 0, -0.999967, 0, 1, 0, 0.999967, 0, -0.00780159, -18.139, 2, -12.531)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[node name="UserInterface" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme = SubResource("Theme_272bh")
+
+[node name="ScoreLabel" type="Label" parent="UserInterface"]
+layout_mode = 0
+offset_left = 68.0
+offset_top = 25.0
+offset_right = 129.0
+offset_bottom = 48.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Score: 0"
+script = ExtResource("5_7mycd")
+
+[node name="Retry" type="ColorRect" parent="UserInterface"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 71.0
+offset_top = 152.0
+offset_right = 601.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.380392)
+
+[node name="Label" type="Label" parent="UserInterface/Retry"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -251.0
+offset_top = -31.5
+offset_right = 251.0
+offset_bottom = 31.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "                      กด Enter เพื่อเริ่มเกมใหม่
+จัดทำโดย นายชัชติยะ สินธุธรรม 663380032-0 AI Sec.1"
+label_settings = SubResource("LabelSettings_5vw27")
+
+[connection signal="hit" from="Player" to="." method="_on_player_hit"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
