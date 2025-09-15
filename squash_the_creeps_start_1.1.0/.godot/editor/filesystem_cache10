@@ -1,17 +1,17 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1757935051
+::res://::1757938536
 default_bus_layout.tres::AudioBusLayout/AudioBusLayout::-1::1757788835::0::1::::<><><>0<>0<><>::
 default_env.tres::Environment/Environment::-1::1757788835::0::1::::<><><>0<>0<><>::
-export_presets.cfg::TextFile::-1::1757935051::0::1::::<><><>0<>0<><>::
+export_presets.cfg::TextFile/TextFile::-1::1757935051::0::1::::<><><>0<>0<><>::
 icon.png::CompressedTexture2D/CompressedTexture2D::7531872921495255629::1757788600::1757788850::1::::<><><>0<>0<>e1ff1b79f4bcd3b3da7c23c54d7201ed<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
-main.gd::GDScript::4636365420189401077::1757870438::0::1::::<>Node<><>0<>0<><>::
-main.tscn::PackedScene::7129501671618139856::1757933580::0::1::::<><><>0<>0<><>::uid://b7b5i423x408x::::res://main.gd<>uid://xww6y2frqtd4::::res://player.tscn<>uid://bi2pe1e77iceh::::res://mob.tscn<>uid://c3feloo83gxlc::::res://art/newscms_thaihealth_c_abeqruvwy367.jpg<>uid://1kdfdwbc2jcd::::res://fonts/Montserrat-Medium.ttf<>uid://cfjb33otl2gal::::res://score_label.gd<>uid://bvkxc6dgnh4jo::::res://THSarabunNew/THSarabunNew BoldItalic.ttf
-mob.gd::GDScript::8577669887448710087::1757876559::0::1::::<>CharacterBody3D<><>0<>0<><>::
+main.gd::GDScript/GDScript::4636365420189401077::1757870438::0::1::::<>Node<><>0<>0<><>::
+main.tscn::PackedScene::7129501671618139856::1757936225::0::1::::<><><>0<>0<><>::uid://b7b5i423x408x::::res://main.gd<>uid://xww6y2frqtd4::::res://player.tscn<>uid://bi2pe1e77iceh::::res://mob.tscn<>uid://c3feloo83gxlc::::res://art/newscms_thaihealth_c_abeqruvwy367.jpg<>uid://1kdfdwbc2jcd::::res://fonts/Montserrat-Medium.ttf<>uid://cfjb33otl2gal::::res://score_label.gd<>uid://bvkxc6dgnh4jo::::res://THSarabunNew/THSarabunNew BoldItalic.ttf
+mob.gd::GDScript/GDScript::8577669887448710087::1757876559::0::1::::<>CharacterBody3D<><>0<>0<><>::
 mob.tscn::PackedScene::3004588903507425239::1757933580::0::1::::<><><>0<>0<><>::uid://duhc78ek1y6ud::::res://mob.gd<>uid://bmpheeunveecw::::res://art/Red Car.glb
 music_player.tscn::PackedScene::3217404171021419667::1757933580::0::1::::<><><>0<>0<><>::uid://c4xm2invgrdra::::res://art/busy-street-66943.mp3
-player.gd::GDScript::7045723076542862746::1757875185::0::1::::<>CharacterBody3D<><>0<>0<><>::
+player.gd::GDScript/GDScript::7045723076542862746::1757875185::0::1::::<>CharacterBody3D<><>0<>0<><>::
 player.tscn::PackedScene::1661152150236642367::1757933580::0::1::::<><><>0<>0<><>::uid://c7nabakpkadao::::res://player.gd<>uid://h8crkqjlg0lv::::res://art/Car.glb
-score_label.gd::GDScript::5142477197745112331::1757869098::0::1::::<>Label<><>0<>0<><>::
+score_label.gd::GDScript/GDScript::5142477197745112331::1757869098::0::1::::<>Label<><>0<>0<><>::
 ::res://art/::1757876751
 body.material::StandardMaterial3D/StandardMaterial3D::-1::1757788600::0::1::::<><><>0<>0<><>::
 busy-street-66943.mp3::AudioStreamMP3/AudioStreamMP3::6856575782813238550::1757871607::1757871608::1::::<><><>0<>0<>fbdee2e95fe837c1c87a3a9255c1e060<>res://.godot/imported/busy-street-66943.mp3-7676334f5e955c84548f23bea494f2eb.mp3str::
@@ -26,20 +26,20 @@ newscms_thaihealth_c_abeqruvwy367.jpg::CompressedTexture2D/CompressedTexture2D::
 player.glb::PackedScene/PackedScene::3637783875357097781::1757788600::1757788851::1::::<><><>0<>0<>c0ea0929f787df5445275a96d083d27e<>res://.godot/imported/player.glb-08dcfb373480a049995065542e37637b.scn::
 pupil.material::StandardMaterial3D/StandardMaterial3D::-1::1757788600::0::1::::<><><>0<>0<><>::
 Red Car.glb::PackedScene/PackedScene::3260084877393745530::1757860883::1757860930::1::::<><><>0<>0<>df8b08b166c648d36f14c29d4863c366<>res://.godot/imported/Red Car.glb-528fe89bfc5b3e05b3fe57c97cc903e9.scn::
-::res://docs/::1757935051
-index.apple-touch-icon.png::CompressedTexture2D::9216553355444305910::1757935051::1757935075::1::::<><><>0<>0<>7fa54b42a6436e15ad25f9b3f42a1131<>res://.godot/imported/index.apple-touch-icon.png-b21a756d869f84af832970a74d8371bc.ctex::
-index.icon.png::CompressedTexture2D::6795468098342530470::1757935051::1757935075::1::::<><><>0<>0<>4d3e56e4fa26ea484ef737e8e60c9d45<>res://.godot/imported/index.icon.png-b92c9a802ad4b78e247784454a6b506f.ctex::
-index.png::CompressedTexture2D::8147097613188202059::1757935051::1757935075::1::::<><><>0<>0<>8ec243cafc257d0a63dd849591b91e8d<>res://.godot/imported/index.png-0c78d14d192abe5f22f8c25928ca1ab8.ctex::
+::res://docs/::1757935075
+index.apple-touch-icon.png::CompressedTexture2D/CompressedTexture2D::9216553355444305910::1757935051::1757935075::1::::<><><>0<>0<>7fa54b42a6436e15ad25f9b3f42a1131<>res://.godot/imported/index.apple-touch-icon.png-b21a756d869f84af832970a74d8371bc.ctex::
+index.icon.png::CompressedTexture2D/CompressedTexture2D::6795468098342530470::1757935051::1757935075::1::::<><><>0<>0<>4d3e56e4fa26ea484ef737e8e60c9d45<>res://.godot/imported/index.icon.png-b92c9a802ad4b78e247784454a6b506f.ctex::
+index.png::CompressedTexture2D/CompressedTexture2D::8147097613188202059::1757935051::1757935075::1::::<><><>0<>0<>8ec243cafc257d0a63dd849591b91e8d<>res://.godot/imported/index.png-0c78d14d192abe5f22f8c25928ca1ab8.ctex::
 ::res://fonts/::1757860034
 LICENSE.txt::TextFile/TextFile::-1::1757788600::0::1::::<><><>0<>0<><>::
 Montserrat-Medium.ttf::FontFile/FontFile::1845744983682190979::1757788600::1757788850::1::::<><><>0<>0<>aac45ea5dc04c9b18f7ea419f1e19178<>res://.godot/imported/Montserrat-Medium.ttf-e832861e4ad4110e172112dc430c04b0.fontdata::
 ::res://THSarabunNew/::1757933481
-THSarabunNew Bold.ttf::FontFile::74232311311797395::1757933429::1757933481::1::::<><><>0<>0<>9c43a25a6bac30968a25bbdb3235d75b<>res://.godot/imported/THSarabunNew Bold.ttf-d5b013c4be5508f64bef5634d6ba2909.fontdata::
-THSarabunNew BoldItalic.ttf::FontFile::3882431873202378940::1757933429::1757933481::1::::<><><>0<>0<>79d257f87382a4680f389b76e3f2b564<>res://.godot/imported/THSarabunNew BoldItalic.ttf-01025a8ec4c542fd82b5d075500c7756.fontdata::
-THSarabunNew Italic.ttf::FontFile::7731910015326477664::1757933429::1757933481::1::::<><><>0<>0<>da5b710f388507a856af957ea60b750c<>res://.godot/imported/THSarabunNew Italic.ttf-0873f77e400dbdcd4010558268fa73d2.fontdata::
-THSarabunNew.ttf::FontFile::1300623905430608198::1757933429::1757933481::1::::<><><>0<>0<>13bfc9dfcc631567b585eee31ad3f839<>res://.godot/imported/THSarabunNew.ttf-8be07ee96a5d9e21983fa295a1ed45c3.fontdata::
+THSarabunNew Bold.ttf::FontFile/FontFile::74232311311797395::1757933429::1757933481::1::::<><><>0<>0<>9c43a25a6bac30968a25bbdb3235d75b<>res://.godot/imported/THSarabunNew Bold.ttf-d5b013c4be5508f64bef5634d6ba2909.fontdata::
+THSarabunNew BoldItalic.ttf::FontFile/FontFile::3882431873202378940::1757933429::1757933481::1::::<><><>0<>0<>79d257f87382a4680f389b76e3f2b564<>res://.godot/imported/THSarabunNew BoldItalic.ttf-01025a8ec4c542fd82b5d075500c7756.fontdata::
+THSarabunNew Italic.ttf::FontFile/FontFile::7731910015326477664::1757933429::1757933481::1::::<><><>0<>0<>da5b710f388507a856af957ea60b750c<>res://.godot/imported/THSarabunNew Italic.ttf-0873f77e400dbdcd4010558268fa73d2.fontdata::
+THSarabunNew.ttf::FontFile/FontFile::1300623905430608198::1757933429::1757933481::1::::<><><>0<>0<>13bfc9dfcc631567b585eee31ad3f839<>res://.godot/imported/THSarabunNew.ttf-8be07ee96a5d9e21983fa295a1ed45c3.fontdata::
 ::res://THSarabunNew/__MACOSX/::1757933481
-._THSarabunNew Bold.ttf::FontFile::3388561806875433175::1757933429::1757933481::1::::<><><>0<>0<>7984b8eb0d564e3528aaf427f9282ec9<>res://.godot/imported/._THSarabunNew Bold.ttf-f80ed2db30e15623c2f91439be2d75f0.fontdata::
-._THSarabunNew BoldItalic.ttf::FontFile::4659808685669265226::1757933429::1757933481::1::::<><><>0<>0<>fc97f1d50e126e6f9cec3d1044f2bfe4<>res://.godot/imported/._THSarabunNew BoldItalic.ttf-fbdedbb47d6d9fbf067de9a9a0a915c9.fontdata::
-._THSarabunNew Italic.ttf::FontFile::5609486631949943070::1757933429::1757933481::1::::<><><>0<>0<>f5f2ce9dadceeb2d62a800daa7502ff1<>res://.godot/imported/._THSarabunNew Italic.ttf-1ac9b44a3ad119efaa3cc05081d43e96.fontdata::
-._THSarabunNew.ttf::FontFile::3604419998783061970::1757933429::1757933481::1::::<><><>0<>0<>53cc9bd0d38ded482b561a2ecd2e68ae<>res://.godot/imported/._THSarabunNew.ttf-eb98c62109f7175f71d80d9c77165606.fontdata::
+._THSarabunNew Bold.ttf::FontFile/FontFile::3388561806875433175::1757933429::1757933481::1::::<><><>0<>0<>7984b8eb0d564e3528aaf427f9282ec9<>res://.godot/imported/._THSarabunNew Bold.ttf-f80ed2db30e15623c2f91439be2d75f0.fontdata::
+._THSarabunNew BoldItalic.ttf::FontFile/FontFile::4659808685669265226::1757933429::1757933481::1::::<><><>0<>0<>fc97f1d50e126e6f9cec3d1044f2bfe4<>res://.godot/imported/._THSarabunNew BoldItalic.ttf-fbdedbb47d6d9fbf067de9a9a0a915c9.fontdata::
+._THSarabunNew Italic.ttf::FontFile/FontFile::5609486631949943070::1757933429::1757933481::1::::<><><>0<>0<>f5f2ce9dadceeb2d62a800daa7502ff1<>res://.godot/imported/._THSarabunNew Italic.ttf-1ac9b44a3ad119efaa3cc05081d43e96.fontdata::
+._THSarabunNew.ttf::FontFile/FontFile::3604419998783061970::1757933429::1757933481::1::::<><><>0<>0<>53cc9bd0d38ded482b561a2ecd2e68ae<>res://.godot/imported/._THSarabunNew.ttf-eb98c62109f7175f71d80d9c77165606.fontdata::
